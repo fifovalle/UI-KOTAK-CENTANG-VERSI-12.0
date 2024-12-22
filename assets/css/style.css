@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0f0e17;
+}
+
+.mengalihkan {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 1.2em;
+  height: 3.3em;
+}
+
+.mengalihkan .ceklis {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.penggeser {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a7a9be;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.penggeser:before {
+  position: absolute;
+  content: "";
+  height: 0.5em;
+  width: 2.4em;
+  border-radius: 5px;
+  left: -0.6em;
+  top: 0.2em;
+  background-color: #e53170;
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.penggeser:before,
+.penggeser:after {
+  content: "";
+  display: block;
+}
+
+.penggeser:after {
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #e53170;
+  border-right: 0 solid transparent;
+  transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateX(-22.5%) rotate(90deg);
+  transform-origin: 25% 50%;
+  position: relative;
+  top: 0.5em;
+  left: 0.55em;
+  width: 2em;
+  height: 1em;
+  box-sizing: border-box;
+}
+
+.ceklis:checked + .penggeser {
+  background-color: #ff8906;
+}
+
+.ceklis:focus + .penggeser {
+  box-shadow: 0 0 1px #ff8906;
+}
+
+.ceklis:checked + .penggeser:before {
+  transform: translateY(2.3em);
+}
+
+.ceklis:checked + .penggeser:after {
+  transform: rotateZ(90deg) rotateY(180deg) translateY(0.45em)
+    translateX(-1.4em);
+}
