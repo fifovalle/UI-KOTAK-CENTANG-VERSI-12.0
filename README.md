@@ -20,7 +20,7 @@ Jelajahi karya terbaru dan keterampilan saya dalam dunia pengembangan perangkat 
 
 Berikut adalah beberapa tampilan halaman website :
 
-![1](https://github.com/user-attachments/assets/12c40b62-222c-4fa1-bfeb-5dd4f30d7bb7)
+![proyek93](https://github.com/user-attachments/assets/feb8edc1-4eec-4cd0-ae43-e7219b28da78)
 
 ## 📬 Kontak
 
@@ -35,7 +35,7 @@ Kontribusi dan umpan balik dari komunitas sangat dihargai. Jika Anda ingin berko
 1. Clone repositori ini ke direktori web server Anda.
 
    ```
-   git clone https://github.com/fifovalle/UI-TOMBOL-VERSI-28.0.git
+   git clone https://github.com/fifovalle/UI-KOTAK-CENTANG-VERSI-12.0.git
 
    ```
 
